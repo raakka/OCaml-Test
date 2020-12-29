@@ -1,4 +1,5 @@
 open H2
+module Client = H2_lwt_unix.Client
 
 let response_handler notify_response_received response response_body =
   match response.Response.status with
