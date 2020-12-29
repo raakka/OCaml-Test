@@ -1,2 +1,3 @@
 (executable
- (name ocamltest))
+ (name ocamltest)
+ (libraries h2))
