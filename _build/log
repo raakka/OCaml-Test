@@ -1,10 +1,10 @@
-# dune build
+# dune external-lib-deps --missing @@default
 # OCAMLPARAM: unset
 # Workspace root: /Users/xvi/Desktop/OCaml-Test
-$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/yw/z5tmk4gj6sl462bnlmv_b77h0000gp/T/dune43c7aa.output 2> /dev/null
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/yw/z5tmk4gj6sl462bnlmv_b77h0000gp/T/dune4950b4.output 2> /dev/null
 # Auto-detected concurrency: 12
 # disable binary cache
-$ /Users/xvi/.opam/4.11.1/bin/ocamlc.opt -config > /var/folders/yw/z5tmk4gj6sl462bnlmv_b77h0000gp/T/dunecb7321.output
+$ /Users/xvi/.opam/4.11.1/bin/ocamlc.opt -config > /var/folders/yw/z5tmk4gj6sl462bnlmv_b77h0000gp/T/dune5857a7.output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -105,9 +105,3 @@ $ /Users/xvi/.opam/4.11.1/bin/ocamlc.opt -config > /var/folders/yw/z5tmk4gj6sl46
 #      ; windows_unicode = false
 #      }
 #  }
-$ (cd _build/default && /Users/xvi/.opam/4.11.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .ocamltest.eobjs/byte -I /Users/xvi/.opam/4.11.1/lib/angstrom -I /Users/xvi/.opam/4.11.1/lib/base64 -I /Users/xvi/.opam/4.11.1/lib/bigarray-compat -I /Users/xvi/.opam/4.11.1/lib/bigstringaf -I /Users/xvi/.opam/4.11.1/lib/bytes -I /Users/xvi/.opam/4.11.1/lib/faraday -I /Users/xvi/.opam/4.11.1/lib/h2 -I /Users/xvi/.opam/4.11.1/lib/hpack -I /Users/xvi/.opam/4.11.1/lib/httpaf -I /Users/xvi/.opam/4.11.1/lib/psq -I /Users/xvi/.opam/4.11.1/lib/result -I /Users/xvi/.opam/4.11.1/lib/seq -no-alias-deps -opaque -o .ocamltest.eobjs/byte/dune__exe__Ocamltest.cmo -c -impl ocamltest.ml)
-> File "ocamltest.ml", line 20, characters 10-26:
-> 20 |           Lwt.wakeup_later notify_response_received ())
->                ^^^^^^^^^^^^^^^^
-> Error: Unbound module Lwt
-[2]
